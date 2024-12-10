@@ -2,4 +2,5 @@ src/
 pkg/
 *.xz
 *.pkg.tar.zst
-
+zen-kernel
+linux

@@ -5,8 +5,8 @@ post_upgrade() {
 }
 
 post_remove() {
-  rm -f boot/initramfs-linux.img
-  rm -f boot/initramfs-linux-fallback.img
+  rm -f boot/initramfs-linux-zen-uconsole-rpi64.img
+  rm -f boot/initramfs-linux-zen-uconsole-rpi64-fallback.img
 }
 
 post_install() {
@@ -24,9 +24,9 @@ pwm_sample_bits=20
 gpio=10=ip,np
 
 # boot custom kernel
-kernel=vmlinuz-linux-uconsole-rpi64
+kernel=vmlinuz-linux-zen-uconsole-rpi64
 arm_64bit=1
-initramfs initramfs-linux-uconsole-rpi64.img followkernel
+initramfs initramfs-linux-zen-uconsole-rpi64.img followkernel
 
 [all]
 dtoverlay=dwc2,dr_mode=host

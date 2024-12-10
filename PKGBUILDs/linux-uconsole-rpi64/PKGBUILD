@@ -1,20 +1,20 @@
 # uConsole(RPi CM3/CM4/CM4S)
 # Maintainer: PotatoMania <nikko@faint.day>
 
-pkgbase=linux-uconsole-rpi64
-pkgver=6.6.51+g0fb3c83a9fa3
+pkgbase=linux-zen-uconsole-rpi64
+pkgver=6.6.63+ga43545acc08a
 # _majorversion=${pkgver%.*}
 # _subversion=${pkgver##*.}
 # _srcname=linux-${_majorversion}
-_desc="uConsole(CM3) kernel package using RPi's fork"
+_desc="uConsole(CM3) zen kernel package using RPi's fork"
 
-_srcname=linux
+_srcname=zen-kernel
 _srcbranch="rpi-6.6.y"
-_repourl="git+https://github.com/raspberrypi/linux.git#branch=${_srcbranch}"
+_repourl="git+https://github.com/someone5678/zen-kernel.git#branch=${_srcbranch}"
 
 pkgrel=1
 arch=('aarch64')
-url="https://github.com/raspberrypi/linux"
+url="https://github.com/someone5678/zen-kernel"
 license=('GPL2')
 makedepends=(
   bc
@@ -44,7 +44,7 @@ source=("${_srcname}::${_repourl}"
         0007-drm-panel-cwu50-expose-dsi-error-status-to-userspace.patch
 )
 b2sums=('SKIP'
-        '476f7d94e6f77d6e9e501482daa6fad470e13c9b154c63bceb5090768bf34f1413ea82b280b26510f83d91431c480c894f2c910cfe0c2105cc1d75d1466343ff'
+        'SKIP'
         'bf23fa8846d66d358d5bc4f25719dc5adea4cd43837e1c9eb0ff292c03c83951bf02363e8bbf96bbee3fa618d9b8b92a6ff27c65319186ff08677f1d4d74c128'
         '90f3773e08643d7e674a505e4450960116f460271ac01b0d5863c197acd8408f0c10ad06c49fe809d075d5b5700a8cfd490ffc656938bf7381166d0246620b12'
         '8877a834133c464a88fe86c93b0ef1d4d05395c39261134709b8b3a503b77d3176f329a0d7d3ac8e80b13c49d956db80c4560da4953311a1cca3935cc8b4da37'
