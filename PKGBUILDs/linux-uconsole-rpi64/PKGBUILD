@@ -2,7 +2,7 @@
 # Maintainer: PotatoMania <nikko@faint.day>
 
 pkgbase=linux-zen-uconsole-rpi64
-pkgver=6.6.64+g4fb2411ced7c
+pkgver=6.6.64+g74f8846eefe2
 # _majorversion=${pkgver%.*}
 # _subversion=${pkgver##*.}
 # _srcname=linux-${_majorversion}
